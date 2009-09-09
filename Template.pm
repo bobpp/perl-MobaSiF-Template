@@ -13,7 +13,7 @@ our @ISA = qw(Exporter);
 our %EXPORT_TAGS = ( 'all' => [ qw() ] );
 our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
 our @EXPORT = qw();
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 require XSLoader;
 XSLoader::load('MobaSiF::Template', $VERSION);
@@ -36,14 +36,26 @@ sub render {
 
 __END__
 
+=encoding euc-jp
+
 =head1 NAME
 
 MobaSiF::Template - Very fast Template module written by XS.
 
 =head1 SYNOPSIS
 
-use MobaSiF::Template;
-$html = MobaSiF::Template::insert($compiled_template_file, $refParamHash);
+  use MobaSiF::Template;
+
+  my $compiled_template_file = "compiled_template.bin";
+  my $refParamHash = {
+    base => 'MobaSiF::Template Test',
+	list => [
+	  { id => 1 , value => 'A' },
+	  { id => 2 , value => 'B' },
+	 ]
+  };
+  $html = MobaSiF::Template::insert($compiled_template_file, $refParamHash);
+  print $html;
 
 =head1 ABSTRACT
 

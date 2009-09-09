@@ -44,6 +44,8 @@ use constant {
 	FALSE => 0,
 };
 
+our $VERSION = '0.03';
+
 #---------------------------------------------------------------------
 
 sub loadTemplate {
@@ -517,14 +519,15 @@ sub _debug_getString {
 
 __END__
 
+=encoding euc-jp
+
 =head1 NAME
 
-MobaSiF::Template::Compiler - テンプレートコンパイラ
+MobaSiF::Template::Compiler - Template compiler for MobaSiF::Template
 
 =head1 SYNOPSIS
 
   use MobaSiF::Template::Compiler;
-  
   MobaSiF::Template::Compiler::compile($in, $out_file);
   
 =head1 DESCRIPTION
@@ -577,8 +580,8 @@ $ } $
   
   制限：and, or を混在することはできません。
 
-=head1 SEEALSO
+=head1 SEE ALSO
 
-  MobaSiF::Template
+MobaSiF::Template
 
 =cut
