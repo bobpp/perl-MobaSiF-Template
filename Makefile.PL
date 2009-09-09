@@ -10,6 +10,6 @@ WriteMakefile(
     VERSION_FROM  => 'Template.pm',
     PREREQ_PM     => +{},
     ABSTRACT_FROM => 'Template.pm',
-    AUTHOR        => 'bobpp < bobpp.asroma+cpan@gmail.com >',
+    AUTHOR        => 'bobpp < bobpp@cpan.org >',
 );
 
