@@ -38,7 +38,7 @@ __END__
 
 =head1 NAME
 
-MobaSiF::Template - 高速なテンプレートライブラリ
+MobaSiF::Template - Very fast Template module written by XS.
 
 =head1 SYNOPSIS
 
@@ -47,7 +47,8 @@ $html = MobaSiF::Template::insert($compiled_template_file, $refParamHash);
 
 =head1 ABSTRACT
 
-事前コンパイルされたテンプレートバイナリを用いて高速なテンプレート処理を行います。ループ・条件分岐・置換（URL ENCODE, HTMLSPECIALCHARS(+NL2BR) が可能）に対応しており、基本的なHTMLテンプレートの処理に対応できます。
+事前コンパイルされたテンプレートバイナリを用いて高速なテンプレート処理を行います。
+ループ・条件分岐・置換（URL ENCODE, HTMLSPECIALCHARS(+NL2BR) が可能）に対応しており、基本的なHTMLテンプレートの処理に対応できます。
 
 =head1 DESCRIPTION
 
