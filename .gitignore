@@ -1,1 +1,9 @@
 tags
+Makefile
+Makefile.old
+Template.bs
+Template.c
+Template.o
+blib
+pm_to_blib
+
